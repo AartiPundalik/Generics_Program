@@ -27,22 +27,40 @@ namespace Generics_Program
                 Console.ReadLine();
             }
         }
-            public static void FindingStringMaximum(string FirstValue, string SecondValue, String ThirdValue)
+        public static void FindingStringMaximum(string FirstValue, string SecondValue, String ThirdValue)
+        {
+            if (FirstValue.CompareTo(SecondValue) >= 0 && FirstValue.CompareTo(ThirdValue) >= 0)
             {
-                if (FirstValue.CompareTo(SecondValue) >= 0 && FirstValue.CompareTo(ThirdValue) >= 0)
-                {
-                    Console.WriteLine("First Number Is Greater :" + FirstValue);
-                }
-                else if (SecondValue.CompareTo(FirstValue) >= 0 && SecondValue.CompareTo(ThirdValue) >= 0)
-                {
-                    Console.WriteLine("Second Number Is Greater :" + SecondValue);
-                }
-                else if (ThirdValue.CompareTo(FirstValue) >= 0 && ThirdValue.CompareTo(SecondValue) >= 0)
-                {
-                    Console.WriteLine("Third Number Is Greater :" + ThirdValue);
-                    Console.ReadLine();
+                Console.WriteLine("First Number Is Greater :" + FirstValue);
+            }
+            else if (SecondValue.CompareTo(FirstValue) >= 0 && SecondValue.CompareTo(ThirdValue) >= 0)
+            {
+                Console.WriteLine("Second Number Is Greater :" + SecondValue);
+            }
+            else if (ThirdValue.CompareTo(FirstValue) >= 0 && ThirdValue.CompareTo(SecondValue) >= 0)
+            {
+                Console.WriteLine("Third Number Is Greater :" + ThirdValue);
+                Console.ReadLine();
 
+            }
+        }
+            public static void FindingFloatMaximum(double FirstNumber, double SecondNumber, double ThirdNumber)
+            {
+                if (FirstNumber.CompareTo(SecondNumber) >= 0 && FirstNumber.CompareTo(ThirdNumber) >= 0)
+                {
+                    Console.WriteLine("First Number Is Greater :" + FirstNumber);
                 }
+                else if (SecondNumber.CompareTo(FirstNumber) >= 0 && SecondNumber.CompareTo(ThirdNumber) >= 0)
+                {
+                    Console.WriteLine("Second Number Is Greater :" + SecondNumber);
+                }
+                else if (ThirdNumber.CompareTo(FirstNumber) >= 0 && ThirdNumber.CompareTo(SecondNumber) >= 0)
+                {
+                    Console.WriteLine("Third Number Is Greater :" + ThirdNumber);
+                    Console.ReadLine();
+                }
+
+
             }
         }
     }

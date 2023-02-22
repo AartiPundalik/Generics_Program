@@ -21,6 +21,9 @@ namespace Generics_Program
                 case 2:
                     FindMaximum.FindingStringMaximum("Pune", "Mumbai", "Rajasthan");
                     break;
+                case 3:
+                    FindMaximum.FindingFloatMaximum(4.5, 6.2, 8.1);
+                    break;
             }
         }
     }
