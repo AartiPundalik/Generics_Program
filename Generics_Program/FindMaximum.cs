@@ -60,6 +60,7 @@ namespace Generics_Program
                 Console.ReadLine();
             }
         }
+        
             public  T GenricValue<T>(T FirstNum, T SecondNum, T ThirdNum) where T : IComparable
             {
                 if (FirstNum.CompareTo(SecondNum) > 0 && FirstNum.CompareTo(ThirdNum) > 0)
