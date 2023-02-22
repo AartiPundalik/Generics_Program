@@ -60,16 +60,16 @@ namespace Generics_Program
                 Console.ReadLine();
             }
         }
-            public  T GenricValue<T>(T FirstNumber, T SecondNumber, T ThirdNumber) where T : IComparable
+            public  T GenricValue<T>(T FirstNum, T SecondNum, T ThirdNum) where T : IComparable
             {
-                if (FirstNumber.CompareTo(SecondNumber) > 0 && FirstNumber.CompareTo(ThirdNumber) > 0)
-                    return FirstNumber;
-                if (SecondNumber.CompareTo(ThirdNumber) > 0 && SecondNumber.CompareTo(FirstNumber) > 0)
-                    return SecondNumber;
-                if (ThirdNumber.CompareTo(FirstNumber) > 0 && ThirdNumber.CompareTo(SecondNumber) > 0)
-                    return ThirdNumber;
+                if (FirstNum.CompareTo(SecondNum) > 0 && FirstNum.CompareTo(ThirdNum) > 0)
+                    return FirstNum;
+                if (SecondNum.CompareTo(ThirdNum) > 0 && SecondNum.CompareTo(FirstNum) > 0)
+                    return SecondNum;
+                if (ThirdNum.CompareTo(FirstNum) > 0 && ThirdNum.CompareTo(SecondNum) > 0)
+                    return ThirdNum;
 
-                return FirstNumber;
+                return FirstNum;
 
             }
         }
