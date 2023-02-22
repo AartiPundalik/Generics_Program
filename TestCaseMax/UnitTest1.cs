@@ -32,8 +32,15 @@ namespace TestCaseMax
         }
         public void GivenMaxFirstNum_WhenAnalysed_ShouldReturnFirstMax_string()
         {
-            string  result = genericMthodForString.GenricValue("Mumbai", "Pune", "Rajasthan");
+            string result = genericMthodForString.GenricValue("Mumbai", "Pune", "Rajasthan");
             Assert.AreEqual("Pune", result);
+            //Assert.Pass();
+        }
+        [Test]
+        public void GivenMaxFirstNum_WhenAnalysed_ShouldReturnSecondMax_string()
+        {
+            string result = genericMthodForString.GenricValue("Mumbai", "Pune", "Rajasthan");
+            Assert.AreEqual("Mumbai", result);
             //Assert.Pass();
         }
     }
