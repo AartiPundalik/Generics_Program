@@ -43,5 +43,12 @@ namespace TestCaseMax
             Assert.AreEqual("Mumbai", result);
             //Assert.Pass();
         }
+        [Test]
+        public void GivenMaxFirstNum_WhenAnalysed_ShouldReturnthridMax_string()
+        {
+            string result = genericMthodForString.GenricValue("Mumbai", "Pune", "Rajasthan");
+            Assert.AreEqual("Rajasthan", result);
+            //Assert.Pass();
+        }
     }
 }
