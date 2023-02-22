@@ -66,5 +66,13 @@ namespace TestCaseMax
             Assert.AreEqual(3.4, result);
             //Assert.Pass();
         }
+        [Test]
+
+        public void GivenMaxFirstNum_WhenAnalysed_ShouldReturnthridMax_double()
+        {
+            double result = genericMthodForFloat.GenricValue(1.2, 3.4, 9.9);
+            Assert.AreEqual(1.2, result);
+            //Assert.Pass();
+        }
     }
 }
