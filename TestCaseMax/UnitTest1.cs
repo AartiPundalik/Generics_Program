@@ -5,6 +5,7 @@ namespace TestCaseMax
     public class Tests
     {
         FindMaxGenric<int> genericMthodForInt = new FindMaxGenric<int>();
+        FindMaxGenric<string> genericMthodForString = new FindMaxGenric<string>();
 
 
         [Test]
@@ -31,7 +32,7 @@ namespace TestCaseMax
         }
         public void GivenMaxFirstNum_WhenAnalysed_ShouldReturnFirstMax_string()
         {
-            string result = genericMthodForString.GenricValue("Mumbai", "Pune", "Rajasthan");
+            string  result = genericMthodForString.GenricValue("Mumbai", "Pune", "Rajasthan");
             Assert.AreEqual("Pune", result);
             //Assert.Pass();
         }
