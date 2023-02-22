@@ -27,5 +27,23 @@ namespace Generics_Program
                 Console.ReadLine();
             }
         }
+            public static void FindingStringMaximum(string FirstValue, string SecondValue, String ThirdValue)
+            {
+                if (FirstValue.CompareTo(SecondValue) >= 0 && FirstValue.CompareTo(ThirdValue) >= 0)
+                {
+                    Console.WriteLine("First Number Is Greater :" + FirstValue);
+                }
+                else if (SecondValue.CompareTo(FirstValue) >= 0 && SecondValue.CompareTo(ThirdValue) >= 0)
+                {
+                    Console.WriteLine("Second Number Is Greater :" + SecondValue);
+                }
+                else if (ThirdValue.CompareTo(FirstValue) >= 0 && ThirdValue.CompareTo(SecondValue) >= 0)
+                {
+                    Console.WriteLine("Third Number Is Greater :" + ThirdValue);
+                    Console.ReadLine();
+
+                }
+            }
+        }
     }
-}
+

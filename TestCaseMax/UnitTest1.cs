@@ -29,5 +29,11 @@ namespace TestCaseMax
             Assert.AreEqual(20, result);
             //Assert.Pass();
         }
+        public void GivenMaxFirstNum_WhenAnalysed_ShouldReturnFirstMax_string()
+        {
+            string result = genericMthodForString.GenricValue("Mumbai", "Pune", "Rajasthan");
+            Assert.AreEqual("Pune", result);
+            //Assert.Pass();
+        }
     }
 }

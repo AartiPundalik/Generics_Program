@@ -18,6 +18,9 @@ namespace Generics_Program
                 case 1:
                     FindMaximum.FindIntMaxVal(3, 5, 1);
                     break;
+                case 2:
+                    FindMaximum.FindingStringMaximum("Pune", "Mumbai", "Rajasthan");
+                    break;
             }
         }
     }
