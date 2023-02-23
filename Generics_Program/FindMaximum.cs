@@ -44,22 +44,33 @@ namespace Generics_Program
 
             }
         }
-            public static void FindingFloatMaximum(double FirstNumber, double SecondNumber, double ThirdNumber)
+        public static void FindingFloatMaximum(double FirstNumber, double SecondNumber, double ThirdNumber)
+        {
+            if (FirstNumber.CompareTo(SecondNumber) >= 0 && FirstNumber.CompareTo(ThirdNumber) >= 0)
             {
-                if (FirstNumber.CompareTo(SecondNumber) >= 0 && FirstNumber.CompareTo(ThirdNumber) >= 0)
-                {
-                    Console.WriteLine("First Number Is Greater :" + FirstNumber);
-                }
-                else if (SecondNumber.CompareTo(FirstNumber) >= 0 && SecondNumber.CompareTo(ThirdNumber) >= 0)
-                {
-                    Console.WriteLine("Second Number Is Greater :" + SecondNumber);
-                }
-                else if (ThirdNumber.CompareTo(FirstNumber) >= 0 && ThirdNumber.CompareTo(SecondNumber) >= 0)
-                {
-                    Console.WriteLine("Third Number Is Greater :" + ThirdNumber);
-                    Console.ReadLine();
-                }
+                Console.WriteLine("First Number Is Greater :" + FirstNumber);
+            }
+            else if (SecondNumber.CompareTo(FirstNumber) >= 0 && SecondNumber.CompareTo(ThirdNumber) >= 0)
+            {
+                Console.WriteLine("Second Number Is Greater :" + SecondNumber);
+            }
+            else if (ThirdNumber.CompareTo(FirstNumber) >= 0 && ThirdNumber.CompareTo(SecondNumber) >= 0)
+            {
+                Console.WriteLine("Third Number Is Greater :" + ThirdNumber);
+                Console.ReadLine();
+            }
+        }
+        
+            public  T GenricValue<T>(T FirstNum, T SecondNum, T ThirdNum) where T : IComparable
+            {
+                if (FirstNum.CompareTo(SecondNum) > 0 && FirstNum.CompareTo(ThirdNum) > 0)
+                    return FirstNum;
+                if (SecondNum.CompareTo(ThirdNum) > 0 && SecondNum.CompareTo(FirstNum) > 0)
+                    return SecondNum;
+                if (ThirdNum.CompareTo(FirstNum) > 0 && ThirdNum.CompareTo(SecondNum) > 0)
+                    return ThirdNum;
 
+                return FirstNum;
 
             }
         }
